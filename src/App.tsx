@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+import "./App.css";
+import InputField from "./components/inputField";
+// let name: string = "Pratyay";
+// let age: number | string;
+// let hobbies: string[];
+// let tupleExample: [string, number] = ["role", 5];
+// type Student = {
+//   name: string;
+//   age: number;
+//   phonenumber?: number;
+// };
+// let checkFunction: (name: string) => number;
+// //void returns undefined , void doesnt return undefined
+// let student: Student = {
+//   name: "Pratyay",
+//   age: 22,
+// };
+// function printName(name: string) {
+//   console.log(name);
+// }
+// let studnets: Student[];
+const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <span className="heading">Taskify</span>
+      <InputField />
     </div>
   );
-}
+};
 
 export default App;
